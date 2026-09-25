@@ -4,6 +4,13 @@ def load_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
+def combat(file):
+    with open(f"combat/{file}", "r") as f:
+        combat_data = json.laod(f)
+    
+    while True:
+        pass
+
 #changes the room
 def change_room(file):
     global room_data
@@ -15,7 +22,12 @@ def show_text(file):
     print()
     with open(load_path(f"flavor_text/{file}"), "r") as f:
         for line in f.readlines():
-            print(line, end="")
+            if line[0] == "~":
+                print()
+                input("Press enter to continue.")
+                eval(line[1:])
+            else:
+                print(line, end="")
     print()
     print()
     input("Press enter to continue")
@@ -33,8 +45,7 @@ def subtract_resources(amount):
 def roll_credits():
     print("""
 Thank you to these wonderful programmers:
-            John Name
-            Johnny Name
+            Connor Layson
 
 And the person who kept this story on track:
             Abby Griffin
@@ -57,7 +68,7 @@ time.sleep(5)
 #Actually code for the game.
 
 #Set the starter room
-file = "testRoom.json"
+file = "lair_entrance_1.json"
 global room_data
 room_data = ""
 change_room(file)

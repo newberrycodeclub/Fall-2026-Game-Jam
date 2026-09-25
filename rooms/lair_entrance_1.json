@@ -1,0 +1,14 @@
+{
+    "name": "Dragon's Lair - Entrance",
+    "description": "The cave ahead of you is long and dark.\nBehind you is the light of the nearby star, peeking into the mouth of the cave.\nThe light illuminates a body on the ground.",
+    "options": [
+        "Investigate the body",
+        "Turn back",
+        "Go deeper into the cave"
+    ],
+    "functions": [
+        "show_text('investigate_body.txt')",
+        "show_text('in_too_deep.txt')",
+        "change_room('lair_hall_1.json')"
+    ]
+}
