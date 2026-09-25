@@ -36,7 +36,13 @@ def combat(en_file, pl_file):
             global resources
             resources -= player_data['heal_cost']
             player_data['hp'] += random.randint(player_data['heal_amount'][0], player_data['heal_amount'][1])
+        
+        #ENEMY TURN
             
+
+def raise_sus(amount):
+    global suspect
+    suspect += amount
 
 #changes the room
 def change_room(file):
@@ -100,7 +106,9 @@ global room_data
 room_data = ""
 change_room(file)
 global resources
+global suspect
 resources = 100
+suspect = 0
 while True:
     #Clear screen.
     for i in range(50):
