@@ -1,0 +1,10 @@
+You cautiously move up to the body on the ground.
+It's sprawled out and decaying like it hasn't been touched in a long time.
+You move closer to the body and examine it. 
+It's uniform looks familiar, kind of like your own.
+
+You recognize the uniform as an older version of the same one you are wearing.
+You see a name tag, still pinned to the chest.
+The name tag is rusted and covered in dust. You wipe away the dust and read the name.
+
+"Lieutenant Clark"
