@@ -1,0 +1,8 @@
+{
+    "name": "You",
+    "hp": 100,
+    "atk": 5,
+    "def": 0,
+    "heal_cost": 1,
+    "heal_amount": [5, 10]
+}

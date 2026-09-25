@@ -1,8 +1,48 @@
-import json, os, sys, time
+import json, os, sys, time, random
 
 def load_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
+
+def combat(en_file, pl_file):
+    with open(f"combat/{en_file}", "r") as f:
+        combat_data = json.load(f)
+    with open(f"combat/{en_file}", "r") as f:
+        player_data = json.load(f)
+    
+    while True:
+        #PLAYER TURN
+        print(f"--== {player_data['name']} ==--")
+        print(f"HP: {player_data['hp']}")
+        print(f"ATK: {player_data['atk']}")
+        print(f"DEF: {player_data['def']}")
+        print()
+        while True:
+            player_data['def'] = 0
+            try:
+                print("What do you do?")
+                print("(1) Attack")
+                print("(2) Defend")
+                print(f"(3) Heal ({player_data['heal_cost']} resources)")
+                choice = int(input("> "))
+                break
+            except:
+                print("Must choose a valid number.")
+        if choice == 1:
+            combat_data['hp'] = combat_data['hp'] - (player_data['atk'] - combat_data['def'])
+        if choice == 2:
+            player_data['def'] += 2
+        if choice == 3:
+            global resources
+            resources -= player_data['heal_cost']
+            player_data['hp'] += random.randint(player_data['heal_amount'][0], player_data['heal_amount'][1])
+        
+        #ENEMY TURN
+            
+
+def raise_sus(amount):
+    global suspect
+    suspect += amount
 
 #changes the room
 def change_room(file):
@@ -15,7 +55,12 @@ def show_text(file):
     print()
     with open(load_path(f"flavor_text/{file}"), "r") as f:
         for line in f.readlines():
-            print(line, end="")
+            if line[0] == "~":
+                print()
+                input("Press enter to continue.")
+                eval(line[1:])
+            else:
+                print(line, end="")
     print()
     print()
     input("Press enter to continue")
@@ -34,7 +79,7 @@ def roll_credits():
     print("""
 Thank you to these wonderful programmers:
             Brendon MacArthur
-            Johnny Name
+            Connor Layson
 
 And the person who kept this story on track:
             Abby Griffin
@@ -62,7 +107,9 @@ global room_data
 room_data = ""
 change_room(file)
 global resources
-resources = 50
+global suspect
+resources = 100
+suspect = 0
 while True:
     #Clear screen.
     for i in range(50):
