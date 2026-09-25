@@ -83,8 +83,7 @@ while True:
     while True:
         try:
             choice = int(input("Pick an option: "))
+            eval(room_data["functions"][choice-1])
             break
         except:
-            print("You must pick a number.")
-    
-    eval(room_data["functions"][choice-1])
+            print("You must pick a number that is listed.")
