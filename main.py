@@ -33,8 +33,7 @@ def subtract_resources(amount):
 def roll_credits():
     print("""
 Thank you to these wonderful programmers:
-            John Name
-            Johnny Name
+            Connor Layson
 
 And the person who kept this story on track:
             Abby Griffin
