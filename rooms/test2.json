@@ -1,0 +1,10 @@
+{
+    "name": "Test room - Fake exit",
+    "description": "There is no exit...",
+    "options": [
+        "Go back."
+    ],
+    "functions": [
+        "change_room('testRoom.json')"
+    ]
+}

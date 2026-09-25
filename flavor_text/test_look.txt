@@ -1,0 +1,6 @@
+Wow look at this.
+This is some flavor text.
+It doesn't do anything to the game
+and is just if you want to add a bit 
+of extra text without actually leaving
+the room or changing anything.

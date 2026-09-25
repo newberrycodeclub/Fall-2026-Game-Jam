@@ -1,0 +1,14 @@
+{
+    "name": "Test room",
+    "description": "There is nothing on the walls. \nIt's very unsettling...",
+    "options": [
+        "Look around",
+        "Go crazy",
+        "Exit"
+    ],
+    "functions": [
+        "show_text('test_look.txt')",
+        "subtract_resources(2)",
+        "change_room('test2.json')"
+    ]
+}
