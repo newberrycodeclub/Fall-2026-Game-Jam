@@ -1,0 +1,36 @@
+--==This is a list of all the commands you can run==--
+
+subtract_resources(amount)
+
+    You can reduce the amount of resources the player has by 
+    whatever you set as [amount]
+
+    **Able to use in flavor text**
+
+raise_sus(amount)
+
+    Raises the amount of suspect the captain has by [amount]
+
+    **Able to use in flavor text**
+
+change_room(file)
+
+    Changes the room specified in [file]
+
+show_text(file)
+
+    Shows flavor text specified in [file]
+
+die()
+
+    Shows a death screen (Not yet done)
+
+roll_credits()
+
+    Shows the credits
+
+combat(enemy_file, player_file)
+
+    Enters combat as [player_file], against [enemy_file].
+
+    ***See example json files in the "combat" folder.
