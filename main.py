@@ -151,7 +151,9 @@ while True:
     while True:
         try:
             choice = int(input("Pick an option: "))
-            eval(room_data["functions"][choice-1])
+            commands = room_data['functions'][choice-1].split('~')
+            for command in commands:
+                eval(command)
             break
         except:
             print("You must pick a number that is listed.")
