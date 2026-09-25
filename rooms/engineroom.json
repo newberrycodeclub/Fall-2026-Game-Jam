@@ -1,0 +1,10 @@
+{
+    "name": "Engine Room",
+    "description": "This is the engine room.",
+    "options": [
+        "Go back."
+    ],
+    "functions": [
+        "change_room('hallway.json')"
+    ]
+}

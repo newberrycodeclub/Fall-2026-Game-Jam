@@ -1,0 +1,14 @@
+{
+    "name": "Your quarters",
+    "description": "You are in your quarters.\nThe walls are gray and barren and you can hear the soft hum of the spaceship's engine.",
+    "options": [
+        "Look around.",
+        "Enter bathroom.",
+        "Leave your quarters."
+    ],
+    "functions": [
+        "show_text('quarterslook.txt')",
+        "change_room('bathroom.json')",
+        "change_room('hallway.json')"
+    ]
+}

@@ -78,6 +78,7 @@ def subtract_resources(amount):
 def roll_credits():
     print("""
 Thank you to these wonderful programmers:
+            Brendon MacArthur
             Connor Layson
 
 And the person who kept this story on track:
@@ -101,7 +102,7 @@ time.sleep(5)
 #Actually code for the game.
 
 #Set the starter room
-file = "lair_entrance_1.json"
+file = "quarters.json"
 global room_data
 room_data = ""
 change_room(file)

@@ -1,0 +1,16 @@
+{
+    "name": "Bathroom",
+    "description": "Your bathroom is plain and looks the same as the hundreds of other bathrooms.",
+    "options": [
+        "Wash your hands.",
+        "Clean your face.",
+        "Take a shower.",
+        "Go back."
+    ],
+    "functions": [
+        "show_text('wash_hands.txt')",
+        "show_text('clean_face.txt')",
+        "show_text('shower.txt')",
+        "change_room('quarters.json')"
+    ]
+}

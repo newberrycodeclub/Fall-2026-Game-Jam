@@ -1,6 +1,6 @@
 {
-    "name": "Test room",
-    "description": "There is nothing on the walls. \nIt's very unsettling...",
+    "name": "Your quarters",
+    "description": "You are in your quarters. \n The walls are gray and barren and you can hear the soft hum of the spaceship's engine.",
     "options": [
         "Look around",
         "Go crazy",
