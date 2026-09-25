@@ -2,5 +2,6 @@
     "hp": 150,
     "atk": 7,
     "def": 3,
-    "heal_amount": [10, 5]
+    "heal_amount": [10, 5],
+    "end_room": "dragon_delima.json"
 }

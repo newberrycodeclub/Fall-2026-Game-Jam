@@ -4,41 +4,8 @@ def load_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
-def combat(en_file, pl_file):
-    with open(f"combat/{en_file}", "r") as f:
-        combat_data = json.load(f)
-    with open(f"combat/{en_file}", "r") as f:
-        player_data = json.load(f)
-    
-    while True:
-        #PLAYER TURN
-        print(f"--== {player_data['name']} ==--")
-        print(f"HP: {player_data['hp']}")
-        print(f"ATK: {player_data['atk']}")
-        print(f"DEF: {player_data['def']}")
-        print()
-        while True:
-            player_data['def'] = 0
-            try:
-                print("What do you do?")
-                print("(1) Attack")
-                print("(2) Defend")
-                print(f"(3) Heal ({player_data['heal_cost']} resources)")
-                choice = int(input("> "))
-                break
-            except:
-                print("Must choose a valid number.")
-        if choice == 1:
-            combat_data['hp'] = combat_data['hp'] - (player_data['atk'] - combat_data['def'])
-        if choice == 2:
-            player_data['def'] += 2
-        if choice == 3:
-            global resources
-            resources -= player_data['heal_cost']
-            player_data['hp'] += random.randint(player_data['heal_amount'][0], player_data['heal_amount'][1])
-        
-        #ENEMY TURN
-            
+def die():
+    pass
 
 def raise_sus(amount):
     global suspect
@@ -97,6 +64,61 @@ print("""
 The Super Awesome Quest to Kill the Galactic Space Dragon. In Space.
 """)
 time.sleep(5)
+
+#Combat
+def combat(en_file, pl_file):
+    with open(f"combat/{en_file}", "r") as f:
+        combat_data = json.load(f)
+    with open(f"combat/{pl_file}", "r") as f:
+        player_data = json.load(f)
+    
+    while True:
+        #PLAYER TURN
+        print(f"--== {player_data['name']} ==--")
+        print(f"HP: {player_data['hp']}")
+        print(f"ATK: {player_data['atk']}")
+        print(f"DEF: {player_data['def']}")
+        print()
+        while True:
+            player_data['def'] = 0
+            try:
+                print("What do you do?")
+                print("(1) Attack")
+                print("(2) Defend")
+                print(f"(3) Heal ({player_data['heal_cost']} resources)")
+                choice = int(input("> "))
+                break
+            except:
+                print("Must choose a valid number.")
+        if choice == 1:
+            combat_data['hp'] = combat_data['hp'] - (player_data['atk'] - combat_data['def'])
+        if choice == 2:
+            player_data['def'] += 2
+        if choice == 3:
+            global resources
+            resources -= player_data['heal_cost']
+            player_data['hp'] += random.randint(player_data['heal_amount'][0], player_data['heal_amount'][1])
+        
+        #ENEMY TURN
+        print()
+        print(f"--== {combat_data['name']} ==--")
+        print(f"HP: {combat_data['hp']}")
+        print(f"ATK: {combat_data['atk']}")
+        print(f"DEF: {combat_data['def']}")
+        en_choice = random.int(1,5)
+        if en_choice == 1:
+            print(f"{combat_data['name']} healed.")
+            combat_data['hp'] += random.randint(combat_data['heal_amount'][0], combat_data['heal_amount'][1])
+        else:
+            print(f"{combat_data['name']} attacks you.")
+            player_data['hp'] = player_data['hp'] - (combat_data['atk'] - player_data['def'])
+        
+        #See if anyone is dead
+        if player_data['hp'] <= 0:
+            die()
+        if combat_data['hp'] <= 0:
+            change_room(combat_data['end_room'])
+
 
 #Actually code for the game.
 
