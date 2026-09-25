@@ -29,8 +29,38 @@ roll_credits()
 
     Shows the credits
 
+    **Able to use in flavor text**
+
 combat(enemy_file, player_file)
 
     Enters combat as [player_file], against [enemy_file].
 
     ***See example json files in the "combat" folder.
+
+
+--==NOTES ON COMMANDS==--
+
+Commands that say they can be run in flavor text can be used 
+before a command in the room json file as well. Commands in
+the room json must be separated with a tilde (~), with no 
+spaces in between them.
+
+Example:
+    "functions": [
+        "show_text('sample.txt')~change_room('sample.json')"
+    ]
+
+    This function will first show flavor text, then change the room.
+
+Commands in flavor text files must also start with a tilde (~),
+followed by the command. If you want multiple commands, you must use 
+a new line, starting with the tilde (~)
+
+Example:
+    <sample.txt>
+    This will display first, including a prompt to "press enter"
+    ~subtract_resources(5)
+    ~raise_sus(5)
+    This will show after the player goes through the prompt to 
+    reduce resources, then run add_sus. Another prompt to press 
+    enter will show
