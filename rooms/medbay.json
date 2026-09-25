@@ -2,9 +2,11 @@
     "name": "Medical Bay",
     "description": "This is the medical bay.",
     "options": [
+        "Look around.",
         "Go back."
     ],
     "functions": [
+        "show_text('medtext.txt')",
         "change_room('hallway.json')"
     ]
 }
