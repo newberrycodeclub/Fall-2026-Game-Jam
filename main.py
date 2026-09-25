@@ -57,7 +57,7 @@ time.sleep(5)
 #Actually code for the game.
 
 #Set the starter room
-file = "testRoom.json"
+file = "quarters.json"
 global room_data
 room_data = ""
 change_room(file)

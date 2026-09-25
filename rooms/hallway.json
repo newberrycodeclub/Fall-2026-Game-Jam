@@ -1,0 +1,18 @@
+{
+    "name": "Hallway",
+    "description": "You enter the hallway. A couple fellow soldiers are walking the halls.",
+    "options": [
+        "Go to the engine room.",
+        "Go to the cockpit.",
+        "Go to medical bay.",
+        "Go to mess hall.",
+        "Go to your quarters."
+    ],
+    "functions": [
+        "change_room('engineroom.json')",
+        "show_text('accessdenied.txt')",
+        "change_room('medbay.json')",
+        "change_room('messhall.json')",
+        "change_room('quarters.json')"
+    ]
+}
