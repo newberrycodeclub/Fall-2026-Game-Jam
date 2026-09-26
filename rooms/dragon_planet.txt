@@ -1,0 +1,13 @@
+{
+    "name": "Dragon Planet",
+    "description": "flavor text please.",
+    "options": [
+        ".",
+        ".",
+        "."
+    ],
+    "functions": [
+        "change_room('')",
+        "change_room('')"
+    ]
+}
