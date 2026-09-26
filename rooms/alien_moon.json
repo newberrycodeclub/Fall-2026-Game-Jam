@@ -1,0 +1,14 @@
+{
+    "name": "Alien Moon",
+    "description": "You were able to save the ship from being destroyed by asteroids, but your ship still sustained a little bit of damage",
+    "options": [
+        "",
+        "",
+        "Do nothing."
+    ],
+    "functions": [
+        "",
+        "",
+        "die()"
+    ]
+}
