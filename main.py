@@ -47,6 +47,7 @@ def roll_credits():
 Thank you to these wonderful programmers:
             Brendon MacArthur
             Connor Layson
+            James Shoemaker
 
 And the person who kept this story on track:
             Abby Griffin

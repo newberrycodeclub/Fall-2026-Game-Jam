@@ -1,0 +1,14 @@
+{
+    "name": "Asteroids_room",
+    "description": "You see thousands of asteroids raining into the ship. You run to the cockpit to see what you can do to help",
+    "options": [
+        "Watch the pilots navigate the asteroid field on their own",
+        "Grab the main controls of ship and land it on a nearby moon to fix the ship",
+        "Do nothing."
+    ],
+    "functions": [
+        "subtract_resources(25)~change_room('dragon_planet.json')",
+        "subtract_resources(5)~change_room('alien_moon.json')",
+        "die()"
+    ]
+}

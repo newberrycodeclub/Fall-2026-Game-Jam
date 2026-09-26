@@ -14,7 +14,7 @@
         "show_text('accessdenied.txt')",
         "change_room('medbay.json')",
         "change_room('messhall.json')",
-        "change_room('asteroids_room_1.json')",
+        "change_room('Asteroids_room.json')",
         "change_room('quarters.json')"
     ]
 }
