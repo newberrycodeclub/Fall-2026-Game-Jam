@@ -1,0 +1,14 @@
+{
+    "name": "captain_accusation",
+    "description": "Because of the dead soldier, and the previous monster's blaster wounds, you realize this was all a setup from the start. A setup from your Captain",
+    "options": [
+        "Attack the Captain of the ship",
+        "Pretend that you know nothing",
+        "Do nothing."
+    ],
+    "functions": [
+        "combat("captain.json", "single_player.json")",
+        "subtract_resources(5)~change_room('alien_moon.json')",
+        "die()"
+    ]
+}

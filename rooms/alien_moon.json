@@ -1,13 +1,13 @@
 {
     "name": "Alien Moon",
-    "description": "You were able to save the ship from being destroyed by asteroids, but your ship still sustained a little bit of damage",
+    "description": "You were able to save the ship from being destroyed by asteroids, but your ship still sustained a little bit of damage. As you land on the alien moon, a giant alien attacks you.",
     "options": [
         "",
         "",
         "Do nothing."
     ],
     "functions": [
-        "",
+        "combat(alien)",
         "",
         "die()"
     ]

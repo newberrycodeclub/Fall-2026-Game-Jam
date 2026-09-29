@@ -1,0 +1,14 @@
+{
+    "name": "dragon_room",
+    "description": "You see a dragon",
+    "options": [
+        "Spare",
+        "Fight",
+        "Do nothing."
+    ],
+    "functions": [
+        "change_room(spare_route.json)",
+        "combat("combat("captain.json", "single_player.json")",
+        "die()"
+    ]
+}
