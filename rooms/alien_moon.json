@@ -2,13 +2,13 @@
     "name": "Alien Moon",
     "description": "You were able to save the ship from being destroyed by asteroids, but your ship still sustained a little bit of damage. As you land on the alien moon, a giant alien attacks you.",
     "options": [
-        "",
-        "",
+        "Fight the alien",
+        "Board the ship early and take off",
         "Do nothing."
     ],
     "functions": [
-        "combat(alien)",
-        "",
+        "combat('alien.json', 'single_player.json')",
+        "change_room('dragon_planet.json')",
         "die()"
     ]
 }

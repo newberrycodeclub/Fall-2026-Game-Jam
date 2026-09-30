@@ -7,7 +7,7 @@
         "Go deeper into the cave"
     ],
     "functions": [
-        "show_text('investigate_body.txt')",
+        "show_text('investigate_body.txt')~change_room('captain_accusation.json')",
         "show_text('in_too_deep.txt')",
         "change_room('lair_hall_1.json')"
     ]

@@ -7,8 +7,8 @@
         "Do nothing."
     ],
     "functions": [
-        "combat("captain.json", "single_player.json")",
-        "subtract_resources(5)~change_room('alien_moon.json')",
+        "combat('captain.json', 'single_player.json')",
+        "change_room('dragon_room.json')",
         "die()"
     ]
 }
