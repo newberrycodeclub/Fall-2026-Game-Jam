@@ -8,7 +8,7 @@
     ],
     "functions": [
         "change_room(spare_route.json)",
-        "combat("combat("captain.json", "single_player.json")",
+        "combat('captain.json', 'single_player.json')",
         "die()"
     ]
 }
