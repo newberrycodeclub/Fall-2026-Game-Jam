@@ -1,13 +1,12 @@
 {
     "name": "Dragon Planet",
-    "description": "flavor text please.",
+    "description": "random text",
     "options": [
-        ".",
-        ".",
-        "."
+        "camp remains",
+        "mountain fight"
     ],
     "functions": [
-        "change_room('')",
-        "change_room('')"
+        "change_room('camp_remains.json')",
+        "change_room('mountain_fight.json')"
     ]
 }

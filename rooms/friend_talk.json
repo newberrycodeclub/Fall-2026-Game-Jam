@@ -1,0 +1,14 @@
+{
+    "name": "Friend talk",
+    "description": ".",
+    "options": [
+        "talk to friend",
+        "go to dragon lair",
+        "die"
+    ],
+    "functions": [
+        "show_text()",
+        "change_room('lair_entrance_1.json')",
+        "die()"
+    ]
+}
