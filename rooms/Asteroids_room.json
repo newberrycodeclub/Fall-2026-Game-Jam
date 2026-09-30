@@ -7,8 +7,8 @@
         "Do nothing."
     ],
     "functions": [
-        "subtract_resources(25)~change_room('dragon_planet.json')",
-        "subtract_resources(5)~change_room('alien_moon.json')",
+        "change_room('dragon_planet.json')",
+        "change_room('alien_moon.json')",
         "die()"
     ]
 }
