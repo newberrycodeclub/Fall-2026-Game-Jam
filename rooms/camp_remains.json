@@ -1,0 +1,12 @@
+{
+    "name": "camp remains",
+    "description": ".",
+    "options": [
+        "mountain fight",
+        "die"
+    ],
+    "functions": [
+        "change_room('mountain_fight.json')",
+        "die()"
+    ]
+}

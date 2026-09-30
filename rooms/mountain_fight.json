@@ -1,0 +1,12 @@
+{
+    "name": "Mountain fight",
+    "description": ".",
+    "options": [
+        "friend talk",
+        "die"
+    ],
+    "functions": [
+        "change_room('friend_talk.json')",
+        "die()"
+    ]
+}
