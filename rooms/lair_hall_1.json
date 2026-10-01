@@ -1,0 +1,14 @@
+{
+    "name": "Dragon's Lair",
+    "description": "The cave delves deeper into the moon. The tunnel is dark and spooky.",
+    "options": [
+        "Continue into the cave",
+        "Go back",
+        "Examine walls"
+    ],
+    "functions": [
+        "change_room('lair_main_pre_fight.json')",
+        "change_room('lair_entrance_1.json')",
+        "show_text('examine_lair_wall.txt')"
+    ]
+}

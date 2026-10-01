@@ -5,7 +5,12 @@ def load_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 def die():
-    pass
+    print()
+    print()
+    print("You have died.")
+    print("Replay the game to try again \nfor a different outcome!")
+    print()
+    input("Press enter to continue.")
 
 def raise_sus(amount):
     global suspect
@@ -31,6 +36,7 @@ def show_text(file):
     print()
     print()
     input("Press enter to continue")
+    return
 
 #We can use a generic resources variable for now.
 def subtract_resources(amount):
@@ -55,6 +61,7 @@ Thank you for playing our game!
 
 """)
     input("Press enter to exit.")
+    sys.exit()
 
 #Titles (Very cinimatic).
 print("""
@@ -68,12 +75,17 @@ time.sleep(5)
 
 #Combat
 def combat(en_file, pl_file):
-    with open(f"combat/{en_file}", "r") as f:
+    print("Enter combat")
+    with open(load_path(f"combat/{en_file}"), "r") as f:
         combat_data = json.load(f)
-    with open(f"combat/{pl_file}", "r") as f:
+        print("Load file enemy")
+    with open(load_path(f"combat/{pl_file}"), "r") as f:
         player_data = json.load(f)
+        print("Load file player")
     
     while True:
+        for i in range(50):
+            print()
         #PLAYER TURN
         print(f"--== {player_data['name']} ==--")
         print(f"HP: {player_data['hp']}")
@@ -106,13 +118,14 @@ def combat(en_file, pl_file):
         print(f"HP: {combat_data['hp']}")
         print(f"ATK: {combat_data['atk']}")
         print(f"DEF: {combat_data['def']}")
-        en_choice = random.int(1,5)
+        en_choice = random.randint(1,5)
         if en_choice == 1:
             print(f"{combat_data['name']} healed.")
             combat_data['hp'] += random.randint(combat_data['heal_amount'][0], combat_data['heal_amount'][1])
         else:
             print(f"{combat_data['name']} attacks you.")
             player_data['hp'] = player_data['hp'] - (combat_data['atk'] - player_data['def'])
+        input("Press enter to continue")
         
         #See if anyone is dead
         if player_data['hp'] <= 0:
@@ -124,7 +137,7 @@ def combat(en_file, pl_file):
 #Actually code for the game.
 
 #Set the starter room
-file = "quarters.json"
+file = "lair_entrance_1.json"
 global room_data
 room_data = ""
 change_room(file)
@@ -153,8 +166,12 @@ while True:
         try:
             choice = int(input("Pick an option: "))
             commands = room_data['functions'][choice-1].split('~')
+            print(commands)
             for command in commands:
+                print(command)
                 eval(command)
+                print("Im back")
             break
-        except:
+        except Exception as e:
+            print(f"ERROR: {e}")
             print("You must pick a number that is listed.")
