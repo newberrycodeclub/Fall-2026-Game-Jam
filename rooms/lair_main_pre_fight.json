@@ -1,0 +1,14 @@
+{
+    "name": "Dragon's Room",
+    "description": "As you look around, you see the dragon, looming over you.\nYou feel a wave of fear as it speaks.\n'What do you want?'",
+    "options": [
+        "'I have come to slay you, Dragon!'",
+        "'Bring me all of your gold!'",
+        "'Actually, nevermind. I think I'll go back now.'"
+    ],
+    "functions": [
+        "show_text('dragon_speech_1.txt')~combat('dragon.json','single_player.json')",
+        "show_text('dragon_speech_2.txt')~combat('dragon.json','single_player.json')",
+        "show_text('try_to_exit_dragon.txt')~combat('dragon.json','single_player.json')"
+    ]
+}
