@@ -1,7 +1,8 @@
 {
+    "name": "Alien",
     "hp": 150,
     "atk": 7,
     "def": 3,
-    "heal_amount": [10, 5],
+    "heal_amount": [5, 10],
     "end_room": "dragon_planet.json"
 }

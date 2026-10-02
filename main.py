@@ -11,6 +11,7 @@ def die():
     print("Replay the game to try again \nfor a different outcome!")
     print()
     input("Press enter to continue.")
+    roll_credits()
 
 def raise_sus(amount):
     global suspect
@@ -138,7 +139,7 @@ def combat(en_file, pl_file):
 #Actually code for the game.
 
 #Set the starter room
-file = "lair_entrance_1.json"
+file = "quarters.json"
 global room_data
 room_data = ""
 change_room(file)
@@ -167,12 +168,8 @@ while True:
         try:
             choice = int(input("Pick an option: "))
             commands = room_data['functions'][choice-1].split('~')
-            print(commands)
             for command in commands:
-                print(command)
                 eval(command)
-                print("Im back")
             break
         except Exception as e:
-            print(f"ERROR: {e}")
             print("You must pick a number that is listed.")

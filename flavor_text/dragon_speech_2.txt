@@ -4,7 +4,7 @@ The dragon speaks to you:
 Dragons haven't horded gold 
 in five melinia."
 
-~input("Press enter to continue")
+~print()
 
 "The fact that you want to rob me
 means I should probably kill you
