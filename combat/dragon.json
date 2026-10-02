@@ -1,8 +1,8 @@
 {
     "name": "The Galactic Space Dragon",
-    "hp": 150,
+    "hp": 130,
     "atk": 7,
     "def": 3,
-    "heal_amount": [10, 5],
+    "heal_amount": [1, 5],
     "end_room": "dragon_delima.json"
 }
