@@ -1,12 +1,10 @@
 {
     "name": "Dragon Planet",
-    "description": "random text",
+    "description": "You land on the dragon planet. You and your team observe the area and you notice an abandoned camp.",
     "options": [
-        "camp remains",
-        "mountain fight"
+        "Ignore the camp and stay with your team."
     ],
     "functions": [
-        "change_room('camp_remains.json')",
         "change_room('mountain_fight.json')"
     ]
 }
