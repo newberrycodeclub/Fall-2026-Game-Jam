@@ -1,13 +1,11 @@
 {
-    "name": "Friend talk",
-    "description": ".",
+    "name": "Advance closer to the mountain",
+    "description": "The party advances closer to the mountain.",
     "options": [
-        "talk to friend",
-        "go to dragon lair",
-        "die"
+        "Ignore your friend and stay on task.",
+        "Or die."
     ],
     "functions": [
-        "show_text()",
         "change_room('lair_entrance_1.json')",
         "die()"
     ]
