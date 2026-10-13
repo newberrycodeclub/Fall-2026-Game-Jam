@@ -1,0 +1,10 @@
+{
+    "name": "Alien planet",
+    "description": "You have bested the alien!",
+    "options": [
+        "Continue"
+    ],
+    "functions": [
+        "show_text('exit_alien.txt')~change_room('dragon_planet.json')"
+    ]
+}

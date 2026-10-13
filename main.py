@@ -13,6 +13,16 @@ def die():
     input("Press enter to continue.")
     roll_credits()
 
+def end():
+    print()
+    print()
+    print()
+    print("You have reached an end.")
+    print("You may play again for a different outcome!")
+    print()
+    input("Press enter to continue.")
+    roll_credits()
+
 def raise_sus(amount):
     global suspect
     suspect += amount
@@ -133,7 +143,8 @@ def combat(en_file, pl_file):
         if player_data['hp'] <= 0:
             die()
         if combat_data['hp'] <= 0:
-            change_room(combat_data['end_room'])
+            break
+    change_room(combat_data['end_room'])
 
 
 #Actually code for the game.

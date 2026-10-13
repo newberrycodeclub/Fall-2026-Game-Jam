@@ -1,0 +1,12 @@
+{
+    "name": "Dragon's lair",
+    "description": "You have bested the dragon, but now you have a choice...",
+    "options": [
+        "Spare the Dragon",
+        "Slay the dragon"
+    ],
+    "functions": [
+        "show_text('good_ending.txt')~end()",
+        "show_text('bad_ending.txt')~end()"
+    ]
+}
