@@ -1,6 +1,6 @@
 {
     "name": "The Galactic Space Dragon",
-    "hp": 130,
+    "hp": 30,
     "atk": 7,
     "def": 3,
     "heal_amount": [1, 5],

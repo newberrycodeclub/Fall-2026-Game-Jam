@@ -1,6 +1,6 @@
 {
     "name": "The Captain",
-    "hp": 150,
+    "hp": 25,
     "atk": 7,
     "def": 3,
     "heal_amount": [5, 10],
