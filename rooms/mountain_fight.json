@@ -1,6 +1,6 @@
 {
-    "name": "Mountain fight",
-    "description": "After the camp remains, your group advances toward the mountain. You are now talking to your friend, who is worried about the monster.",
+    "name": "Mountain",
+    "description": "After your party flees the monster, your group advances further up the mountainthe mountain. You are now talking to your friend, who is worried about that previous monster.",
     "options": [
         "friend talk",
         "die"
