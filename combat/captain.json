@@ -3,6 +3,6 @@
     "hp": 25,
     "atk": 7,
     "def": 3,
-    "heal_amount": [5, 10],
-    "end_room": "dragon_room.json"
+    "heal_amount": [2, 5],
+    "end_room": "kill_captain.json"
 }

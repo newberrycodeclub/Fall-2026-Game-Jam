@@ -1,0 +1,10 @@
+{
+    "name": "Captain Egbert",
+    "description": "You killed Captain Egbert",
+    "options": [
+        "Continue"
+    ],
+    "functions": [
+        "reset_room()"
+    ]
+}

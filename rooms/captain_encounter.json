@@ -1,0 +1,18 @@
+{
+    "name": "Captain Egbert",
+    "description": "Hold it right there, solder! You've done some pretty questionable things since we got here, \nand I don't like it. I think you're some sort of mole!",
+    "options": [
+        "*Attack the captain*",
+        "'What are you talking about!?'",
+        "'Are you suggesting something?'",
+        "'What if I am?'",
+        "Do nothing."
+    ],
+    "functions": [
+        "combat('captain.json', 'single_player.json')",
+        "show_text('whatAreYouTalkingAbout.txt')~combat('captain.json', 'single_player.json')",
+        "show_text('areYouSuggestingSomething.txt')~combat('captain.json', 'single_player.json')",
+        "show_text('whatIfIAm.txt')~combat('captain.json', 'single_player.json')",
+        "show_text('do_nothing_encounter.txt')~combat('captain.json', 'single_player.json')"
+    ]
+}

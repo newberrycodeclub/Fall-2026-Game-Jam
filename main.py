@@ -4,6 +4,11 @@ def load_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
+def reset_room():
+    global room_data
+    global return_room
+    room_data = return_room
+
 def die():
     print()
     print()
@@ -156,6 +161,8 @@ room_data = ""
 change_room(file)
 global resources
 global suspect
+global return_room
+return_room = ""
 resources = 100
 suspect = 0
 while True:
@@ -183,4 +190,10 @@ while True:
                 eval(command)
             break
         except Exception as e:
+            print(e)
             print("You must pick a number that is listed.")
+    
+    if suspect >= 3:
+        suspect = -10000
+        return_room = room_data
+        change_room('captain_encounter.json')

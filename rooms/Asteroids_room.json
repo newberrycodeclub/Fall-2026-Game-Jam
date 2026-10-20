@@ -8,7 +8,7 @@
     ],
     "functions": [
         "change_room('dragon_planet.json')",
-        "change_room('alien_moon.json')",
+        "raise_sus()~change_room('alien_moon.json')",
         "die()"
     ]
 }
