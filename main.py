@@ -28,9 +28,9 @@ def end():
     input("Press enter to continue.")
     roll_credits()
 
-def raise_sus(amount):
+def raise_sus():
     global suspect
-    suspect += amount
+    suspect += 1
 
 #changes the room
 def change_room(file):
