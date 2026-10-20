@@ -6,7 +6,7 @@
         "Ignore the camp and stay with your team."
     ],
     "functions": [
-	"raise_sus(1)~change_room('
+	    "raise_sus(1)~change_room('camp_remains.json')",
         "change_room('mountain_fight.json')"
     ]
 }
