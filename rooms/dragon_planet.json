@@ -2,11 +2,11 @@
     "name": "Dragon Planet",
     "description": "You land on the dragon planet. You and your team observe the area and you notice an abandoned camp.",
     "options": [
-	    "Investigate the camp.",
+	"Investigate the camp.",
         "Ignore the camp and stay with your team."
     ],
     "functions": [
-	    "raise_sus(1)~change_room('camp_remains.json')",
+	    "raise_sus()~change_room('camp_remains.json')",
         "change_room('no_camp_mountain_fight.json')"
     ]
 }
