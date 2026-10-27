@@ -2,7 +2,7 @@
     "name": "Dragon Planet",
     "description": "You land on the dragon planet. You and your team observe the area and you notice an abandoned camp.",
     "options": [
-	"Investigate the camp.",
+	    "Investigate the camp.",
         "Ignore the camp and stay with your team."
     ],
     "functions": [
