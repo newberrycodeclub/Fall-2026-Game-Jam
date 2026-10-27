@@ -2,13 +2,9 @@
     "name": "camp remains",
     "description": "You search the abandoned camp for any resources or any clues on the dragon. While your party is searching, another monster drops down an attacks your party",
     "options": [
-        "Fight the monster",
-	"Retreat further up the mountain towards the dragon's Lair", 
-        "Do Nothing"
+        "Fight the monster"
     ],
     "functions": [
-        "combat('mountain_monster.json', 'single_player.json')",
-	"change_room('no_camp_mountain_fight.json')" 
-        "die()"
+        "combat('mountain_monster.json', 'single_player.json')"
     ]
 }

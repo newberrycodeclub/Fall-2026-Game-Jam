@@ -7,6 +7,6 @@
     ],
     "functions": [
 	    "raise_sus()~change_room('camp_remains.json')",
-        "change_room('no_camp_mountain_fight.json')"
+        "combat('mountain_monster.json', 'single_player.json')"
     ]
 }
