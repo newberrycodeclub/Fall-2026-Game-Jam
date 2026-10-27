@@ -1,6 +1,6 @@
 {
     "name": "Medical Bay",
-    "description": "This is the medical bay. You look around and see a soldier in bed ",
+    "description": "This is the medical bay. You look around and see a soldier in bed with minor bruises and cuts. You also see an unconscious soldier who is covered from head to toe in casts. Another patient is being rolled in quickly and you notice their wounds seem fatal.",
     "options": [
         "Go back."
     ],
