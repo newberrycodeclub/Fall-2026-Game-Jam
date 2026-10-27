@@ -6,6 +6,7 @@
         "Or die."
     ],
     "functions": [
+        "raise_sus()~show_text('friend_information.txt')~change_room('lair_entrance_1.json')" , 
         "change_room('lair_entrance_1.json')",
         "die()"
     ]
