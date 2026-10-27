@@ -1,6 +1,6 @@
 {
     "name": "Medical Bay",
-    "description": "This is the medical bay.",
+    "description": "This is the medical bay. You look around and see a soldier in bed ",
     "options": [
         "Go back."
     ],
