@@ -8,7 +8,7 @@
     ],
     "functions": [
         "combat('mountain_monster.json', 'single_player.json')",
-	"change_room('no_camp_mountain_fight.json')" 
+	"change_room('lair_entrance_1.json')",
         "die()"
     ]
 }
