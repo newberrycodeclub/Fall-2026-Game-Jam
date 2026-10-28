@@ -7,6 +7,6 @@
     ],
     "functions": [
 	    "raise_sus()~change_room('camp_remains.json')",
-        "combat('mountain_monster.json', 'single_player.json')"
+        "show_text('moutainmonster.txt')~combat('mountain_monster.json', 'single_player.json')"
     ]
 }
